@@ -1,0 +1,10 @@
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* Infinity */
+@font-face {
+  font-family: 'Infinity';
+  src: local('Infinity'), url('./fonts/Infinity.ttf') format('ttf');
+}
+
+

@@ -1,0 +1,87 @@
+@import './buttons-styles/downloadButton.scss';
+
+.contactUs-section{
+    h3{
+        font-family: 'Open Sans';
+        font-size: 42px;
+        font-weight: 300;
+        color: #1e3536;
+        text-align: center;
+    }
+    p{
+        font-family: 'Open Sans';
+        font-size: 20px;
+        font-weight: 300;
+        color: #868686;
+        text-align: center;
+        max-width: 920px;
+        margin: 30px auto 50px auto;
+    }
+    .form-container{
+        width: 100%;
+        max-width: 570px;
+        height: 500px;
+        margin: 0 auto;
+        .name-email{
+            display: flex;
+            justify-content: space-between;
+            input{
+                width: 270px;
+                height: 40px;
+                font-family: "Open Sans";
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 300;
+                color: $input-text-color;
+                background-color: $input-background-color;
+                border-radius: 2px;
+                border: none;
+                outline: none;
+                padding: 0 0 0 20px;
+            }
+        }
+        textarea{
+            width: 100%;
+            height: 170px;
+            font-family: "Open Sans";
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 300;
+            color: $input-text-color;
+            background-color: $input-background-color;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            padding: 20px;
+            margin: 25px 0 0 0;
+            resize: none;
+        }
+        .form-submit-btn{
+            @extend .downloadButton;
+            border: none;
+            color: $btnTextColor;
+            display: block;
+            margin: 20px auto;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contactUs-section{
+        p{
+            max-width: 270px;
+        }
+        .form-container{
+            max-width: 270px;
+            .name-email{
+                flex-direction: column;
+                input{
+                    width: 100%;
+                    &:nth-child(1){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
